@@ -1,0 +1,41 @@
+.headerLogoImage {
+  height: 5vh;
+  width: 5vw;
+  margin-right: 10px;
+}
+.headerLogoContainer {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  margin-left: 100px;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 10px;
+}
+.Stories {
+  height: 30vh;
+  width: 80vw;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.links {
+  margin: 8px;
+}
+.headerTabs {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.searchContainer {
+  display: flex;
+}
+
+.searchButton {
+  margin: 0px;
+}

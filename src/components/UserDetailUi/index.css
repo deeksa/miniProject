@@ -1,0 +1,47 @@
+.detailMargin {
+  margin: 5px;
+}
+
+.profilePicContainer {
+  height: 16vh;
+  width: 8vw;
+  border-radius: 60px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+.userDetailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.storiesDisplayList {
+  list-style-type: none;
+  display: flex;
+}
+.horizontalLine {
+  height: 2px;
+  color: #c6c6c8;
+}
+
+.postsDisplayList {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.imageMargin {
+  margin-top: 30px;
+  margin-right: 5px;
+}
+.biCamera {
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 60px;
+}
+.noPosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

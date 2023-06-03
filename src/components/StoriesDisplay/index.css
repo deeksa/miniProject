@@ -1,0 +1,10 @@
+.storiesDisplay {
+  height: 10vh;
+  width: 5vw;
+  border-radius: 60px;
+  padding: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c6c6c8;
+  margin-right: 20px;
+}

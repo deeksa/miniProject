@@ -1,0 +1,10 @@
+.eachUserStory {
+  height: 25vh;
+  width: 10vw;
+}
+.eachUserStoryImage {
+  height: 10vh;
+  width: 5vw;
+  border-radius: 60px;
+  margin: 14px;
+}

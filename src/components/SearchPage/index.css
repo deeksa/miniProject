@@ -1,0 +1,10 @@
+.searchOrderedList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchHeading {
+  padding-left: 130px;
+}
