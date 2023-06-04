@@ -51,13 +51,13 @@ class LoginPage extends Component {
         <div className="container2">
           <img
             src="https://res.cloudinary.com/dywufvi3m/image/upload/v1685347383/Layer_2login_pdsmll.png"
-            alt="loginImage"
+            alt="website login"
           />
           <div className="container3">
             <div className="container5">
               <img
                 src="https://res.cloudinary.com/dywufvi3m/image/upload/v1685347649/Standard_Collection_8logo_osogfd.png"
-                alt="logo"
+                alt="website logo"
               />
               <h1>Insta Share</h1>
             </div>

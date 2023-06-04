@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import Slider from 'react-slick'
@@ -169,7 +170,7 @@ class HomePage extends Component {
   }
 
   renderLoader = () => (
-    <div className="Stories">
+    <div className="Stories" testid="loader">
       <Loader type="TailSpin" color="#0b69ff" height="20" width="20" />
     </div>
   )
@@ -198,7 +199,7 @@ class HomePage extends Component {
     <div className="FailureStories">
       <img
         src="https://res.cloudinary.com/dywufvi3m/image/upload/v1685682927/Patherrorimg_ltfuyo.png"
-        alt="error"
+        alt="failure view"
       />
       <p>Something went wrong. Please try again</p>
       <button type="button" onClick={this.getUserStatus}>
@@ -268,6 +269,10 @@ class HomePage extends Component {
 
   render() {
     const {isSearchButtonTapped, searchInputText} = this.state
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken === undefined) {
+      return <Redirect to="/login" />
+    }
     return (
       <div>
         <Header onTapSearchButton={this.onTapSearchButton} />

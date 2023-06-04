@@ -4,6 +4,7 @@ import {FaRegComment} from 'react-icons/fa'
 import {FcLike} from 'react-icons/fc'
 import {BiShareAlt} from 'react-icons/bi'
 import {Link, withRouter} from 'react-router-dom'
+import {Component} from 'react'
 import CommentDisplay from '../CommentDisplay'
 
 const UserPost = props => {
@@ -38,6 +39,7 @@ const UserPost = props => {
             {each.likeStatus === true ? (
               <button
                 type="button"
+                testid="likeIcon"
                 className="iconButtonClass"
                 onClick={onTapTrueLike}
               >
@@ -46,6 +48,7 @@ const UserPost = props => {
             ) : (
               <button
                 type="button"
+                testid="unLikeIcon"
                 className="iconButtonClass"
                 onClick={onTapLike}
               >
@@ -62,6 +65,7 @@ const UserPost = props => {
               <CommentDisplay each={e} key={e.userId} />
             ))}
           </ul>
+          <p>{each.createdAt}</p>
         </div>
       </div>
     </li>

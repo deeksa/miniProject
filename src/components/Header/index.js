@@ -12,7 +12,7 @@ class Header extends Component {
   onTapLogout = () => {
     const {history} = this.props
     Cookies.remove('jwt_token')
-    history('/login')
+    history.replace('/login')
   }
 
   onChangeInput = e => {
@@ -30,21 +30,28 @@ class Header extends Component {
     return (
       <div className="headerContainer">
         <div className="headerLogoContainer">
-          <img
-            src="https://res.cloudinary.com/dywufvi3m/image/upload/v1685347649/Standard_Collection_8logo_osogfd.png"
-            alt="logo"
-            className="headerLogoImage"
-          />
+          <Link to="/">
+            <img
+              src="https://res.cloudinary.com/dywufvi3m/image/upload/v1685347649/Standard_Collection_8logo_osogfd.png"
+              alt="website logo"
+              className="headerLogoImage"
+            />
+          </Link>
           <h1>Insta Share</h1>
         </div>
         <div className="headerTabs">
           <div className="searchContainer">
             <input
-              type="input"
+              type="search"
               onChange={this.onChangeInput}
               value={inputValue}
+              placeholder="Search Caption"
             />
-            <button type="button" onClick={this.onTapSearch}>
+            <button
+              type="button"
+              onClick={this.onTapSearch}
+              testid="searchIcon"
+            >
               <FaSearch size={10} />
             </button>
           </div>

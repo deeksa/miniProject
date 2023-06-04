@@ -5,7 +5,9 @@ const CommentDisplay = props => {
   return (
     <li>
       <div className="horizontalAlign">
-        <p className="para1">{each.userName} </p>
+        <p className="para1">
+          <span>{each.userName} </span>
+        </p>
         <p>{each.comment}</p>
       </div>
     </li>

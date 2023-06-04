@@ -92,7 +92,7 @@ class MyProfile extends Component {
   }
 
   renderLoader = () => (
-    <div className="Stories">
+    <div className="Stories" testid="loader">
       <Loader type="TailSpin" color="#0b69ff" height="20" width="20" />
     </div>
   )
@@ -107,7 +107,7 @@ class MyProfile extends Component {
         src="https://res.cloudinary.com/dywufvi3m/image/upload/v1685771638/Group_7522searchFailure_1_mx9skx.png"
         alt="failure view"
       />
-      <p>Something went wrong.Please try again</p>
+      <p>Something went wrong. Please try again</p>
       <button type="button" onClick={this.onTapRetry}>
         Try again
       </button>
